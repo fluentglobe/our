@@ -1,8 +1,29 @@
+django on a Ubuntu Docker Instance
+=============
 
 Weblate will be deployed on a Ubuntu Docker Instance
 
 URL: our.fluentglobe.com (http://146.185.169.23)
 
+
+
+Dockerfile
+----------
+
+With a tag for easier reuse
+
+    $ sudo docker build  -t fluentglobe/our .
+
+Running the container
+
+    $ sudo docker run -d -p :8000 fluentglobe/our
+
+Now go to `<your ip>:8000` in your browser
+
+
+
+More
+----
 
 To deploy the following command will be run,
 
