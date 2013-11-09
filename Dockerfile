@@ -15,7 +15,7 @@ ADD .docker/run.sh /usr/local/bin/run
 RUN (cd /opt/apps/weblate && git remote rm origin)
 RUN (cd /opt/apps/weblate && git remote add origin https://github.com/fluentglobe/weblate.git)
 RUN /opt/ve/weblate/bin/pip install -r /opt/apps/weblate/requirements.txt
-RUN (cd /opt/apps/weblate && /opt/ve/weblate/bin/python manage.py syncdb --noinput)
-RUN (cd /opt/apps/weblate && /opt/ve/weblate/bin/python manage.py collectstatic --noinput)
-EXPOSE 8000
-CMD ["/bin/sh", "-e", "/usr/local/bin/run"]
+# RUN (cd /opt/apps/weblate && /opt/ve/weblate/bin/python manage.py syncdb --noinput)
+# RUN (cd /opt/apps/weblate && /opt/ve/weblate/bin/python manage.py collectstatic --noinput)
+# EXPOSE 8000
+# CMD ["/bin/sh", "-e", "/usr/local/bin/run"]

@@ -3,6 +3,6 @@ GitPython>=0.3.2.RC1
 South>=0.7
 Whoosh>=2.5.2
 Translate-Toolkit>=1.10.0
-lxml>=3.1.0
-Pillow
-python-social-auth
+# lxml>=3.1.0
+# Pillow
+# python-social-auth

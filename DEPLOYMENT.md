@@ -12,7 +12,7 @@ Dockerfile
 
 With a tag for easier reuse
 
-    $ sudo docker build  -t fluentglobe/our .
+    $ sudo docker build  -t fluentglobe/our github.com/fluentglobe/weblate
 
 Running the container
 
@@ -27,8 +27,9 @@ More
 
 To deploy the following command will be run,
 
-docker build -t fluentglobe/weblate github.com/fluentglobe/weblate
+docker build -t fluentglobe/our github.com/fluentglobe/weblate
 
+on
 
 OS: Ubuntu 13.04.3 x64
 Docker: 0.6.6
@@ -39,6 +40,12 @@ pip: 1.3.1
 git: 1.8.1.2
 
 
+This will clone the github repo and run the Dockerfile.
+(https://www.docker.io/learn/dockerfile/level1/)
+
+Interactive shell> docker run -i -t fluentglobe/our bash
+
+
 Docker info found here
 
 https://www.docker.io/gettingstarted/#
@@ -46,22 +53,17 @@ https://www.docker.io/gettingstarted/#
 
 https://www.digitalocean.com/community/articles/how-to-use-the-digitalocean-docker-application
 
-Reference Image can be found here:
-
-http://bitnami.com/stack/weblate
-
-
-Git repo here:
-
-https://github.com/fluentglobe/weblate
 
 
 TODO
-++++
+====
 
-Create VirtualEnv with Django 1.6 & Weblate 1.8
-Start VirtualEnv Django on boot
+Consider removing installs in the Dockerfile
 
+Make sure the Create VirtualEnv with Django 1.6 & Weblate 1.8 is correct.
+
+Mount outside filesystem so PO file export can be done there
+Connect to PSQL outside
 
 
 
