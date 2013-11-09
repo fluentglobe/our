@@ -20,6 +20,7 @@ Running the container
 
 Now go to `<your ip>:8000` in your browser
 
+Nginx on the host system will proxy requests from port 80 to 8000
 
 
 More
@@ -40,7 +41,7 @@ pip: 1.3.1
 git: 1.8.1.2
 
 
-This will clone the github repo and run the Dockerfile.
+This will clone the github repo to /opt/apps/weblate and run the Dockerfile.
 (https://www.docker.io/learn/dockerfile/level1/)
 
 Interactive shell> docker run -i -t fluentglobe/our bash
