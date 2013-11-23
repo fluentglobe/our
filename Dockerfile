@@ -25,6 +25,7 @@ ADD .docker/supervisor.conf /etc/supervisor/conf.d/our.conf
 # ADD .docker/git.sh /opt/git.sh 
 # RUN . /opt/git.sh
 
+# our.fluentglobe.com Django based
 RUN (mkdir -p /opt/apps)
 ADD . /opt/apps/our
 RUN (cd /opt/apps/our && git remote rm origin)
