@@ -12,7 +12,7 @@ Dockerfile
 
 With a tag for easier reuse
 
-    $ sudo docker build  -t fluentglobe/our github.com/fluentglobe/weblate
+    $ sudo docker build  -t fluentglobe/our github.com/fluentglobe/our
 
 Running the container
 
@@ -28,7 +28,7 @@ More
 
 To deploy the following command will be run,
 
-docker build -t fluentglobe/our github.com/fluentglobe/weblate
+docker build -t fluentglobe/our github.com/fluentglobe/our
 
 on
 
@@ -41,7 +41,7 @@ pip: 1.3.1
 git: 1.8.1.2
 
 
-This will clone the github repo to /opt/apps/weblate and run the Dockerfile.
+This will clone the github repo to /opt/apps/our and run the Dockerfile.
 (https://www.docker.io/learn/dockerfile/level1/)
 
 Interactive shell> docker run -i -t fluentglobe/our bash
