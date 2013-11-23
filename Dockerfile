@@ -12,8 +12,8 @@ RUN pip install uwsgi
 RUN virtualenv --no-site-packages /opt/ve/weblate
 ADD .docker/supervisor.conf /etc/supervisor/conf.d/weblate.conf
 RUN (mkdir -p /opt/apps)
-ADD .docker/git.sh /opt/git.sh #using on production
-RUN . /opt/git.sh
+# ADD .docker/git.sh /opt/git.sh #using on production
+# RUN . /opt/git.sh
 RUN (cd /opt/apps/weblate && git remote rm origin)
 RUN (cd /opt/apps/weblate && git remote add origin https://github.com/fluentglobe/weblate.git)
 RUN (cd /opt/apps/weblate && git config branch.master.remote 'origin')
